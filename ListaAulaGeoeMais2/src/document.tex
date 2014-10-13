@@ -33,6 +33,8 @@
 \definecolor{uququq}{rgb}{0.25,0.25,0.25}
 \definecolor{qqwuqq}{rgb}{0.0,0.39215686274509803,0.0}
 \definecolor{ffqqqq}{rgb}{1.0,0.0,0.0}
+\definecolor{ffffff}{rgb}{1,1,1}
+\definecolor{qqqqff}{rgb}{0,0,1}
 
  \pgfplotsset{compat=1.9}
 \begin{document}
@@ -50,196 +52,176 @@
 \section{Matemática}
 \begin{enumerate}[{R}1]
  
-  \item Uma escada de $2m$ é apoiada sobre uma parede perpendicular ao chão.
-  Pode-se afirmar que a distância do centro da escada ao canto, vértice entre o
-  chão e a parede, é: 
+  \item Um cubo é lascado em um de seus vértices. Na figura a lasca se encontra
+  em azul, e é formada pelo tetraedro de vértices F,I,J e K, sendo I, J e K
+  pontos médios de suas respectivas arestas. O percentual de volume que o cubo
+  perdeu ao ser lascado é de, aproximadamente:
 
   \nopagebreak[4]
   \begin{multicols}{2}
   \begin{enumerate}[a)]
-    \item $0,5m$
-    \item $1,0m$
-    \item $1,2m$
-    \item $1,5m$
+    \item $2\%$
+    \item $4\%$
+    \item $13\%$
+    \item $15\%$
+    \item $23\%$
   \end{enumerate}
   
 	\begin{figure}[H]
-		 \centering
-		\begin{tikzpicture}[left, scale = 0.5, line cap=round,line
-		join=round,>=triangle 45,x=1.0cm,y=1.0cm] \clip(5.76,-4.1) rectangle (12.88,4);
-		\draw[color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (10,-3.79) -- (9.79,-3.79) -- (9.79,-4) -- (10,-4) -- cycle;
-		\draw (10,-4) -- (10,4);
-		\draw [domain=5.76:10.0] plot(\x,{(--8-0*\x)/-2});
-		\draw [line width=2.8pt,color=zzttqq] (10,1)-- (8,-4);
-		\draw [dash pattern=on 1pt off 1pt] (9,-1.5)-- (10,-4);
-		\begin{scriptsize}
-		\fill [color=uququq] (9,-1.5) circle (1.5pt);
-		\draw[color=uququq] (8.66,-1.18) node {$D$};
-		\end{scriptsize}
-		\end{tikzpicture}
+	 \centering
+	 \includegraphics[width=1\columnwidth]{cube.png}
+	 \label{fig:cube}
 	\end{figure}
   \end{multicols}
   %\nopagebreak[4]
-  \item Um rolo de pintar composto por um cilindro de $10cm$ de diâmetro é
-  inserido diagonalmente no vaso de tinta, a fim de fazer um detalhe ondulado na
-  pintura (como mostra a figura). O rolo é passado por uma superficie plana
-  para formar esse detalhe. Nessa situação o espaçamento entre dois vales
-  consecutivos da ondulação criada é:
+  \pagebreak[4]
+  \item Dado um cone reto e a maior esfera que pode ser inscrita nesse cone. Com
+  qual desses conjuntos de informações \textbf{não} é possível descobrir a altura do cone:
   
 
-  \nopagebreak[4]
-
-	\begin{figure}[H]
-		 \centering
-		 \includegraphics[width=1\columnwidth]{../rolo.jpg}
-		 %\caption{Tubo da eletrônica embarcada}
-		 \label{fig:rolo}
-	 \end{figure}
-	 
-  \pagebreak[4]
+  \begin{multicols}{2}
   \begin{enumerate}[a)]
-    \item $10\pi cm$
-    \item $20\pi cm$
-    \item $50\pi cm$
-    \item $100\pi cm$
+    \item O ângulo $\hat{ABC}$ do vértice do cone e o raio da esfera.
+    \item O volume da cone e o raio da esfera.
+    \item O volume da esfera e o raio da base do cone.
+    \item A área da base do cone e a área da superfície lateral do cone.
   \end{enumerate}
+  
+	\begin{figure}[H]
+	 \centering
+	 \includegraphics[width=1\columnwidth]{conesphere.png}
+	 \label{fig:cube}
+	\end{figure}
+  \end{multicols}
+	 
 		
   %\pagebreak[4]
-  \item Um cubo é equilibrado sobre apenas um de seus vértices. Quando visto de
-  cima ele se apresenta como um hexagono regular de lado de $1 cm$ de lado
-  (vide figuras). Para isso a superfície do cubo deve ser de:
+  \item Calcular a área da região DEML na interseção entre dois setores
+  circulares é possível fazendo uso das seguintes informações:
 
   \nopagebreak[4]
   \begin{multicols}{2}
   
-	\begin{figure}[H]
-		 \centering
-		 \includegraphics[width=1\columnwidth]{../cube.jpg}
-		 %\caption{Tubo da eletrônica embarcada}
-		 \label{fig:cube}
-	\end{figure}
+  \begin{enumerate}[a)]
+    \item Ângulo $\alpha$ e comprimento do segmento EM
+    \item Comprimento dos arcos ML e DE
+    \item Comprimento do raio interno AM e do segmento ME
+    \item Área do setor ADE e os raios internos e externos AL e AD.
+  \end{enumerate}
 	
 	\begin{figure}[H]
 		 \centering
-			\begin{tikzpicture}[ line cap=round,line join=round,>=triangle
-			45,x=1.0cm,y=1.0cm] \clip(6.38,-5.78) rectangle (11.56,-0.66);
-			\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (8,-5) -- (10,-5) -- (11,-3.27) -- (10,-1.54) -- (8,-1.54) -- (7,-3.27) -- cycle;
-			\draw [line width=1.2pt,color=zzttqq] (8,-5)-- (10,-5);
-			\draw [line width=1.2pt,color=zzttqq] (10,-5)-- (11,-3.27);
-			\draw [line width=1.2pt,color=zzttqq] (11,-3.27)-- (10,-1.54);
-			\draw [line width=1.2pt,color=zzttqq] (10,-1.54)-- (8,-1.54);
-			\draw [line width=1.2pt,color=zzttqq] (8,-1.54)-- (7,-3.27);
-			\draw [line width=1.2pt,color=zzttqq] (7,-3.27)-- (8,-5);
-			\draw [line width=1.2pt] (8,-1.54)-- (9,-3.27);
-			\draw [line width=1.2pt] (9,-3.27)-- (11,-3.27);
-			\draw [line width=1.2pt] (9,-3.27)-- (8,-5);
-			\draw [line width=0.4pt,dash pattern=on 1pt off 1pt] (10,-1.54)-- (9,-3.27);
-			\draw [line width=0.4pt,dash pattern=on 1pt off 1pt] (9,-3.27)-- (7,-3.27);
-			\draw [line width=0.4pt,dash pattern=on 1pt off 1pt] (9,-3.27)-- (10,-5);
-			\draw (8.66,-0.78) node[anchor=north west] {$$1 cm$$};
+			\begin{tikzpicture}[scale=0.8,line cap=round,line join=round,>=triangle
+			45,x=1.0cm,y=1.0cm] \clip(8.06,-8.06) rectangle (17.02,1.72);
+			\draw [shift={(9,-3)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-33.69:0.6) arc (-33.69:33.69:0.6) -- cycle;
+			\draw [shift={(9,-3)},color=zzttqq,fill=zzttqq,fill opacity=0.1]  (0,0) --  plot[domain=-0.59:0.59,variable=\t]({1*7.21*cos(\t r)+0*7.21*sin(\t r)},{0*7.21*cos(\t r)+1*7.21*sin(\t r)}) -- cycle ;
+			\draw [shift={(9,-3)},line width=2.8pt,color=ffffff,fill=ffffff,fill opacity=1.0]  (0,0) --  plot[domain=-0.59:0.59,variable=\t]({1*3.61*cos(\t r)+0*3.61*sin(\t r)},{0*3.61*cos(\t r)+1*3.61*sin(\t r)}) -- cycle ;
+			\draw [shift={(9,-3)},color=zzttqq]  plot[domain=-0.59:0.59,variable=\t]({1*3.61*cos(\t r)+0*3.61*sin(\t r)},{0*3.61*cos(\t r)+1*3.61*sin(\t r)});
+			\draw [dash pattern=on 3pt off 3pt] (9,-3)-- (12,-1);
+			\draw [dash pattern=on 3pt off 3pt] (9,-3)-- (12,-5);
+			\begin{scriptsize}
+			\fill [color=qqqqff] (9,-3) circle (1.5pt);
+			\draw[color=qqqqff] (8.66,-2.6) node {$A$};
+			\fill [color=qqqqff] (15,-7) circle (1.5pt);
+			\draw[color=qqqqff] (15.44,-7.46) node {$D$};
+			\fill [color=qqqqff] (15,1) circle (1.5pt);
+			\draw[color=qqqqff] (15.16,1.26) node {$E$};
+			\fill [color=qqqqff] (12,-5) circle (1.5pt);
+			\draw[color=qqqqff] (11.72,-5.14) node {$L$};
+			\fill [color=qqqqff] (12,-1) circle (1.5pt);
+			\draw[color=qqqqff] (11.72,-0.56) node {$M$};
+			\draw[color=ffffff] (12.78,-2.72) node {$c$};
+			\draw[color=qqwuqq] (10.24,-2.92) node {$\alpha$};
+			\end{scriptsize}
 			\end{tikzpicture}
 	\end{figure}
   \end{multicols}
   
+  \pagebreak[4]
+  \item Dois pontos C e D sobre corte circular em um cilindro de raio 1m possuem
+  distância igual a 1m no espaço. Quando o cilindro é planificado qual a
+  distância entre C e D? (considere que a planificação não corta o arco CD)
+  
+	\begin{figure}[H]
+	 \centering
+	 \includegraphics[width=0.3\columnwidth]{cilinderTwoPoints.png}
+	 \label{fig:cube}
+	\end{figure}
+   \item O vértice A do triângulo ABC encontra-se sobre o semi-cículo BC. Assim
+ podemos garantir que:
+  
   \begin{enumerate}[a)]
-    \item $12 cm^2$
-    \item $9 cm^2$
-    \item $6 cm^2$
-    \item $2 cm^2$
+    \item O triângulo é isóceles, porém pode não ser equilátero.
+    \item O triângulo além de isóceles, é equilátero.
+    \item O triângulo é retângulo.
+    \item Área do setor ADE e os raios internos e externos AL e AD.
   \end{enumerate}
-
-  \item Uma balança de cozinha funciona encontrando o ponto de equilíbrio entre
-  o ingrediente a ser medido e um peso conhecido. Para encontrar o ponto de
-  equilibrio move-se a base sobre o qual a balança se equilibra, vide figura,
-  em seguida deve-se olhar qual o valor em gramas que a base está apontando. 
   
-  \begin{multicols}{2}
-  
-	\begin{figure}[H]
-		 \centering
-		 \includegraphics[width=0.9\columnwidth]{../balanca01PB.jpg}
-		 %\caption{Tubo da eletrônica embarcada}
-		 \label{fig:bal01}
+   \begin{figure}[H]
+	 \centering
+		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+		\clip(0.374,-3.712) rectangle (7.942,0.754);
+		\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (7.,-3.) -- (1.,-3.) -- (4.,0.) -- cycle;
+		%\draw [shift={(4.,-3.)}] plot[domain=0.:π,variable=\t]({1.*3.*cos(\t
+		% r)+0.*3.*sin(\t r)},{0.*3.*cos(\t r)+1.*3.*sin(\t r)}); 
+		\draw [color=zzttqq] (7.,-3.)-- (1.,-3.);
+		\draw [color=zzttqq] (1.,-3.)-- (4.,0.);
+		\draw [color=zzttqq] (4.,0.)-- (7.,-3.);
+		\begin{scriptsize}
+		\draw [fill=qqqqff] (1.,-3.) circle (1.5pt);
+		\draw[color=qqqqff] (0.594,-2.986) node {$B$};
+		\draw [fill=qqqqff] (7.,-3.) circle (1.5pt);
+		\draw[color=qqqqff] (7.304,-3.052) node {$C$};
+		\draw [fill=uuuuuu] (4.,0.) circle (1.5pt);
+		\draw[color=uuuuuu] (4.158,0.314) node {$A$};
+		\end{scriptsize}
+		\end{tikzpicture}
 	\end{figure}
-  \nopagebreak[4]
-	
-
-	\begin{figure}[H]
-		 \centering
-		 \includegraphics[width=0.95\columnwidth]{../balanca02PB.jpg}
-		 %\caption{Tubo da eletrônica embarcada}
-		 \label{fig:bal02}
-	\end{figure}
-  \end{multicols}
-  
-  O princípio da balança funciona, pois existe uma relação entre a distância que
-  se desloca o ponto de equilíbrio e o peso do ingrediente que está sendo
-  medido. Esse deslocamento é medido a partir do zero, onde não há ingrediente
-  sendo medido. O gráfico que melhor esboça a relação entre a distância que o
-  ponto de equilíbrio é deslocado e o peso do ingrediente sendo medido é:
+  \pagebreak[4]
+  \item O padrão ISO 216 define o tamanho de formato de folhas retangulares como
+  A4 e A5, ele determina que tanto A4 quanto A5 tem que possuir a mesma razão de
+  proporção, ou seja, mesma razão entre o tamanho dos seus lados.
+  Sabendo que na figura ABCD representa uma folha A4 e BCEF e AFED duas folhas
+  A5 de mesmo tamanho, pois cada A4 é composta por exatamente duas A5. A
+  razão de proporção da folha A4, é:
   
   \begin{enumerate}[a)]
-    \item 
-  \begin{tikzpicture}
-    \begin{axis}[
-        ymin=0,ymax=125,
-        xmin=0,xmax=14,
-        ticks=none,axis x line=bottom,axis y line=left,ylabel={Peso }, xlabel={Distância},
-    ]
-    \addplot[
-        domain=0:249.999,
-        samples=1000,
-    ]
-        { (15/(15-x)-1)*10};
-    \end{axis}
-\end{tikzpicture}
-    \item 
-
-
-  \begin{tikzpicture}
-    \begin{axis}[
-        ymin=0,ymax=150,
-        xmin=0,xmax=14,
-        ticks=none,axis x line=bottom,axis y line=left,ylabel={Peso},
-        xlabel={Distância}, ]
-    \addplot[
-        domain=0:249.999,
-        samples=1000,
-    ]
-        { (15-15/(1+x))*10};
-    \end{axis}
-\end{tikzpicture}
-    \item 
-
-  \begin{tikzpicture}
-    \begin{axis}[
-        ymin=0,ymax=14,
-        xmin=0,xmax=14,
-        ticks=none,axis x line=bottom,axis y line=left,ylabel={Peso}, xlabel={Distância},
-    ]
-    \addplot[
-        domain=0:249.999,
-        samples=1000,
-    ]
-        { x};
-    \end{axis}
-\end{tikzpicture}
-    \item 
-
-  \begin{tikzpicture}
-    \begin{axis}[
-        ymin=0,ymax=1.2,
-        xmin=0,xmax=180,
-        ticks=none,axis x line=bottom,axis y line=left,ylabel={Peso }, xlabel={Distância},
-    ]
-    \addplot[
-        domain=0:249.999,
-        samples=1000,
-    ]
-        { sin(x)};
-    \end{axis}
-\end{tikzpicture}
-\end{enumerate}
+    \item $1:\sqrt{2}$
+    \item $1:\sqrt{3}$
+    \item $1:2$
+    \item $2:3$
+  \end{enumerate}
+  
+  \begin{figure}[H]
+  \centering
+	  \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\clip(5.58,-6.12) rectangle (12.5,1.98);
+	\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (7.02,0.98) -- (11.02,0.98) -- (11.02,-5.02) -- (7.02,-5.02) -- cycle;
+	\draw [color=zzttqq] (7.02,0.98)-- (11.02,0.98);
+	\draw [color=zzttqq] (11.02,0.98)-- (11.02,-5.02);
+	\draw [color=zzttqq] (11.02,-5.02)-- (7.02,-5.02);
+	\draw [color=zzttqq] (7.02,-5.02)-- (7.02,0.98);
+	\draw [dash pattern=on 2pt off 2pt] (7.02,-2.02)-- (11.02,-2.02);
+	\begin{scriptsize}
+	\draw [fill=qqqqff] (7.02,-5.02) circle (1.5pt);
+	\draw[color=qqqqff] (6.7,-5.34) node {$A$};
+	\draw [fill=qqqqff] (7.02,0.98) circle (1.5pt);
+	\draw[color=qqqqff] (6.66,1.4) node {$B$};
+	\draw [fill=qqqqff] (11.02,0.98) circle (1.5pt);
+	\draw[color=qqqqff] (11.18,1.52) node {$C$};
+	\draw [fill=qqqqff] (11.02,-5.02) circle (1.5pt);
+	\draw[color=qqqqff] (11.28,-5.38) node {$D$};
+	\draw[color=zzttqq] (9.02,1.52) node {$b$};
+	\draw[color=zzttqq] (5.88,-1.88) node {$a$};
+	\draw [fill=uuuuuu] (11.02,-2.02) circle (1.5pt);
+	\draw[color=uuuuuu] (11.16,-1.74) node {$E$};
+	\draw [fill=uuuuuu] (7.02,-2.02) circle (1.5pt);
+	\draw[color=uuuuuu] (6.88,-1.68) node {$F$};
+	\end{scriptsize}
+	\end{tikzpicture}
+  
+  \end{figure}
+  
 \end{enumerate}
 
 \end{document}
